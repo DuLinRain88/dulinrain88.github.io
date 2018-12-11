@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>test ::selection in H5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    ::selection {
+        background: red;
+    }
+    .Input-text:not(:placeholder-shown) + .Input-label, .Input-text:focus:not(:placeholder-shown) + .Input-label {
+		display: block;
+		/*xxx其它CSS*/
+	}
+
+	.Input-label {
+		display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+	}
+    .Input-text {
+        margin-top: 20px;
+    }
+    </style>
+</head>
+<body>
+        <div class="Input">
+            
+            <input type="text" id="input" class="Input-text" placeholder="Your first name, e.g. Nicholas">
+            <label for="input" class="Input-label">First name</label>
+        </div>
+    
+</body>
+</html>
