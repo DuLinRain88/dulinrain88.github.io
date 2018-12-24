@@ -8,7 +8,7 @@
     <script src="https://unpkg.com/callapp-lib@1.7.3/dist/index.umd.min.js"></script>
 </head>
 <body>
-    <script>
+    <!-- <script>
         //1.
         const weixinOpt = {
             protocol: 'omapp',
@@ -17,9 +17,9 @@
                 scheme: 'omapp'
             },
             appstore: 'https://itunes.apple.com/cn/app/id414478124',
-            yingyongbao: 'https://a.app.qq.com/o/simple.jsp?pkgname=com.tencent.omapp',
+            yingyongbao: 'https://a.app.qq.com/o/simple.jsp?pkgname=com.tencent.mm',
             // fallback: location.origin
-            fallback: 'https://a.app.qq.com/o/simple.jsp?pkgname=com.tencent.omapp'
+            fallback: 'https://a.app.qq.com/o/simple.jsp?pkgname=com.tencent.mm'
         };
 
         //2.
@@ -31,6 +31,59 @@
             path: '',
             param: {},
         });
+    </script> -->
+    <script>
+        function invokeApp() {
+            var isSafari = false
+            var isIOS = false
+            var isAndroid = true
+            if (!isIOS && !isAndroid) {
+                // 非 iOS 和 Android 不做处理
+                return;
+            }
+            // url = 'tencenttribe://gbar_home/?bid=12345&from=qq'
+            var url = 'omapp://rank?type=hot-topic';
+            var proxyFrame = document.createElement('iframe');
+
+            proxyFrame.style.display = 'none';
+            document.body.appendChild(proxyFrame);
+
+            // 记录初始时间
+            startTime = new Date();
+
+
+            if (isSafari) {
+                // 诡异：在 iOS9 safari 中 proxyFrame.src = url 是无法唤起的
+                // 更新: 这里是基于安全原因
+                window.location.href = url;
+            } else {
+                proxyFrame.src = url;
+            }
+
+            // 清理
+            setTimeout(function() {
+                proxyFrame.parentNode.removeChild(proxyFrame);
+            }, 5000);
+
+            var time = 1500,
+                time2 = 1550, // setTimeout 有误差，所以设定一个略大的 time2
+                timer;
+
+            // 不可靠的定时器
+            timer = setTimeout(function() {
+                // 记录结束时间
+                endTime = new Date();
+
+                if (endTime - startTime > time2) {
+                    // invokeSuccess();
+                    console.log('成功！')
+                } else {
+                    // invokeFailed();
+                    console.log('失败！')
+                }
+            }, time);
+        }
+        invokeApp()
     </script>
 </body>
 </html>
