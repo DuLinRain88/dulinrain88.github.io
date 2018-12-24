@@ -32,7 +32,7 @@
             param: {},
         });
     </script> -->
-    <script>
+    <!-- <script>
         function invokeApp() {
             var isSafari = false
             var isIOS = false
@@ -84,6 +84,71 @@
             }, time);
         }
         invokeApp()
+    </script> -->
+    <script>
+        var isFromApp = 1
+        var installed = false
+        var BrowserInfo = (function() {
+            var json = {
+                userAgent: navigator.userAgent.toLowerCase(),
+                isAndroid: Boolean(navigator.userAgent.match(/android/ig)),
+                isIphone: Boolean(navigator.userAgent.match(/iphone|ipod/ig)),
+                isIpad: Boolean(navigator.userAgent.match(/ipad/ig)),
+                isWeixin: Boolean(navigator.userAgent.match(/MicroMessenger/ig)),
+            }
+            
+            return json;
+        })();
+        function ready(onBridgeReady) {
+            if (typeof WeixinJSBridge == 'undefined' || !WeixinJSBridge.invoke) {
+                if (document.addEventListener) {
+                    document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+                } else if (document.attachEvent) {
+                    document.attachEvent('WeixinJSBridgeReady', onBridgeReady);
+                    document.attachEvent('onWeixinJSBridgeReady', onBridgeReady);
+                }
+            } else {
+                onBridgeReady();
+            }
+        }
+
+        ready(function () {
+            console.log(BrowserInfo)
+            if (isFromApp && BrowserInfo.isWeixin && BrowserInfo.isIphone) {
+                // 'packageName': 'com.autonavi.minimap'
+                WeixinJSBridge.invoke('getInstallState', {
+                    'packageUrl': "omapp://" // iOS
+                }, function(e) {
+                    var isInstalled = e.err_msg.indexOf('get_install_state:yes') > -1;
+                    alert('app is installed: ' + isInstalled + e.err_msg)
+                    if (isInstalled) {
+                        console.log('app is installed: ' + isInstalled);
+                        // invokeSuccess();
+                    } else {
+                        // invokeFailed();
+                        alert('未安装')
+                    }
+                    function  lannchOrDownloadApp (isInstalled) {
+                        if (isInstalled) {
+                            WeixinJSBridge.invoke('launchApplication', {
+                                "schemeUrl" : "qnreading://forward/page?123",
+                            }, function (res) {
+
+                            })
+                        } else {
+                            //跳转到下载
+                            window.location.href = 'https://itunes.apple.com/cn/app/%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91-%E5%A6%82%E6%87%BF%E4%BC%A0%E7%8B%AC%E6%92%AD/id1231336508?mt=12'
+                        } 
+                    }
+                    document.querySelector('.gotoapp').addEventListener('click', function () {
+                        lannchOrDownloadApp(isInstalled)  
+                    })
+                    document.querySelector('.gotoapp-comment').addEventListener('click', function () {
+                        lannchOrDownloadApp(isInstalled)  
+                    })
+                });
+            }    
+        })
     </script>
 </body>
 </html>
