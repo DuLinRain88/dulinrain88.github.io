@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.9211a1d0.css",
-  "main.css.map": "static/css/main.9211a1d0.css.map",
-  "main.js": "static/js/main.7fe50b83.js",
-  "main.js.map": "static/js/main.7fe50b83.js.map",
+  "main.css": "static/css/main.2e52feb4.css",
+  "main.css.map": "static/css/main.2e52feb4.css.map",
+  "main.js": "static/js/main.2b4edd12.js",
+  "main.js.map": "static/js/main.2b4edd12.js.map",
   "static\\media\\babel.ico": "static/media/babel.161bbf02.ico",
   "static\\media\\bg-1.jpg": "static/media/bg-1.d7b8214f.jpg",
   "static\\media\\bg-11.jpg": "static/media/bg-11.8ac1fd4e.jpg",
@@ -14,8 +14,11 @@
   "static\\media\\es6.png": "static/media/es6.31b7c838.png",
   "static\\media\\es7_8.png": "static/media/es7_8.b2e538d4.png",
   "static\\media\\es9.png": "static/media/es9.f26e7865.png",
+  "static\\media\\esnext.png": "static/media/esnext.5039c84e.png",
+  "static\\media\\go.jpeg": "static/media/go.6bea8423.jpeg",
   "static\\media\\handbyhand.png": "static/media/handbyhand.e45dab5c.png",
   "static\\media\\javascript-design-pattern.png": "static/media/javascript-design-pattern.915da19e.png",
+  "static\\media\\nodejs.jpg": "static/media/nodejs.ba9aff9b.jpg",
   "static\\media\\react.png": "static/media/react.dbcdfc20.png",
   "static\\media\\v8.png": "static/media/v8.d4d74341.png"
 }
