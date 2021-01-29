@@ -1,7 +1,7 @@
 window.TOOL_LINK_LIST = [{
   title: 'NPM漏洞库',
-  link: 'xxx',
-  target: '/vulsdb'
+  link: '/vulsdb',
+  target: '_self'
 }, {
   title: 'Antd在线主题生成',
   link: 'https://dulinrain88.github.io/antd-theme-online/index.html'
