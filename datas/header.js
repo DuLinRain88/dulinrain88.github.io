@@ -1,0 +1,46 @@
+window.MENU_CONFIG = [{
+  name: '最新',
+  type: 'latest'
+}, {
+  name: 'React',
+  type: 'react'
+}, {
+  name: 'CSS',
+  type: 'css'
+}, {
+  name: 'Web安全',
+  type: 'web-security'
+}, {
+  name: 'Chrome',
+  type: 'chrome'
+}, {
+  name: 'V8',
+  type: 'v8'
+}, {
+  name: 'ES6',
+  type: 'es6'
+}, {
+  name: 'NodeJs',
+  type: 'nodejs'
+}, {
+  name: 'Babel',
+  type: 'babel'
+}, {
+  name: 'JavasSript基础',
+  type: 'basic-javascript'
+}, {
+  name: 'ESnext',
+  type: 'esnext'
+}, {
+  name: 'Vue',
+  type: 'vue'
+}, {
+  name: '设计模式',
+  type: 'javascript-design-pattern'
+}, {
+  name: 'HTTP',
+  type: 'http1.1'
+}, {
+  name: '杂项',
+  type: 'miscellaneous'
+}];
