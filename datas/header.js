@@ -23,6 +23,9 @@ window.MENU_CONFIG = [{
   name: 'NodeJs',
   type: 'nodejs'
 }, {
+  name: 'Go',
+  type: 'go'
+}, {
   name: 'Babel',
   type: 'babel'
 }, {
