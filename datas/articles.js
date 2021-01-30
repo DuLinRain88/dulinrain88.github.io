@@ -1948,11 +1948,11 @@ window.WEB_SECURITY_ARTICLES = [
       creator: 'DuLinRain',
       category: 'web-security'
     }, {
-      title:'恶意JS脚本逆向分析小记',
+      title:'恶意js脚本代码混淆原理',
       tags:['Web安全','JS劫持'],
-      link:'/web-security/恶意JS脚本逆向分析小记.html',
-      summary: '最近业务中有遇到一些劫持的情况，表现为拉端、下载应用等行为。劫持后注入的JS一般经过了混淆。这里对其中一段混淆过的JS进行逆向分析。',
-      date:'2020-12',
+      link:'https://mp.weixin.qq.com/s/CPH4EOFLBWxDsClX3_NuHQ',
+      summary: '本文以https://co.puretou.com/icj.min.js这个恶意脚本为例来讲述该恶意脚本的代码混淆手段。',
+      date:'2020-04-23',
       creator: 'DuLinRain',
       recommend: true,
       category: 'web-security'
