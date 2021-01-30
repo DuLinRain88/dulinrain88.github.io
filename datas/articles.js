@@ -379,6 +379,35 @@ window.CSS_ARTICLES = [
 
 window.MISCELLANEOUS_ARTICLES = [
   {
+      title:'Webpack5 Module Federation试用',
+      tags:['微前端', 'webpack'],
+      link:'https://mp.weixin.qq.com/s/U1NHQgD8vbnByxLoT4rMeg',
+      summary: `WMF(Webpack Module Federation)是webpack5提供的微前端解决方案，本文通过一个简单的例子来体验一下WMF。`,
+      date:'2020-11-06',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'miscellaneous'
+  }, 
+  {
+      title:'微前端框架single-spa小bug修复',
+      tags:['微前端', 'single-spa'],
+      link:'https://mp.weixin.qq.com/s/LOBuPo1zwNVks81RFz8hqg',
+      summary: `前天看single-spa代码时发现其中有个非常小的bug，顺手修了一下。有关注微前端或者使用single-spa或阿里qiankun(基于single-spa)框架做微前端的可以了解一下。`,
+      date:'2020-04-20',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'miscellaneous'
+  }, 
+  {
+      title:'Flutter介绍？',
+      tags:['flutter'],
+      link:'https://mp.weixin.qq.com/s/FEIzo94UXu4AhKBBsLj-JA',
+      date:'2020-02-23',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'miscellaneous'
+  }, 
+  {
       title:'TypeScript中是如何实现枚举的？',
       tags:['ts'],
       link:'/es9/TypeScript中是如何实现枚举的？.html',
@@ -952,10 +981,37 @@ window.ESNEXT = [
       creator: 'DuLinRain',
       recommend: true,
       category: 'esnext'
-    } 
+    }, {
+      title:'ES10 之 Object.fromEntries',
+      tags:['es2019'],
+      link:'https://mp.weixin.qq.com/s/nvUj1o4Q9ApL8kzRzzMGHQ',
+      summary: `Object.fromEntries是js新增的一个有用的原生方法。在解释它的用法之前，我们先来看看已存在的 Objcet.entries的用法。`,
+      date:'2019-08-18',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'esnext'
+    }, {
+      title:'ES11 之 Promise新特性',
+      tags:['es2020'],
+      link:'https://mp.weixin.qq.com/s/MAGqLeVBu6qhy32nebSj1w',
+      summary: `ES6(ECMAScript 2015)引入了Promise，他有2个比较常用的静态方法：Promise.all和Promise.race。`,
+      date:'2019-08-19',
+      creator: 'DuLinRain',
+      category: 'esnext'
+    }  
 ]
 
 window.GO_ARTICLES = [
+  {
+      title:'Consul服务网络入门',
+      tags:['go', '服务发现', 'consul'],
+      link:'https://mp.weixin.qq.com/s/n_2scKe9MMmYHJv-syJ3aQ',
+      summary: `Consul是一种网络工具，可提供功能齐全的Service Mesh控制和服务发现。 除此之外，Consul 还提供用于管理服务配置的KV存储。下面我们来学习如何在本地使用Consul的常见功能。`,
+      date:'2020-08-09',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'go'
+  },
   {
       title:'GO调度原理一：操作系统调度',
       tags:['go'],
@@ -964,7 +1020,7 @@ window.GO_ARTICLES = [
       本系列文章将讲述Go程序调度背后的机制和语义。本文的重点则是操作系统调度。
       Go调度器的设计和实现使得多线程Go程序更加高效、性能更好。这需要归功于Go调度器在设计时对
       操作系统(OS)调度器的机械同情(即软硬件协同工作)。`,
-      date:'2020-08-02',
+      date:'2020-09-02',
       creator: 'DuLinRain',
       recommend: true,
       category: 'go'
@@ -977,7 +1033,7 @@ window.GO_ARTICLES = [
       欣赏Go调度的语义非常重要。在这一部分，我将从语义层面讲一下Go的调度是如何进行的。Go调度调度
       本身其实很复杂，很多细节不用过分关注，重要的是通过一个模型来理解Go的调度机制，这有助于在实
       践中做出更好的决策。`,
-      date:'2020-08-08',
+      date:'2020-09-08',
       creator: 'DuLinRain',
       recommend: true,
       category: 'go'
@@ -1824,7 +1880,17 @@ window.VUE_ARTICLES = [
 ]
 
 window.WEB_SECURITY_ARTICLES = [
-  {
+    {
+      title:'恶意JS脚本逆向分析小记',
+      tags:['Web安全','劫持'],
+      link:'https://mp.weixin.qq.com/s/s5Tauiu2HGwuBfjjujNkXA',
+      summary: '最近业务中有遇到一些劫持的情况，表现为拉端、下载应用等行为。劫持后注入的JS一般经过了混淆。这里对其中一段混淆过的JS进行逆向分析。',
+      date:'2020-12-11',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'web-security'
+    }, 
+    {
       title:'Web安全之跨站脚本攻击(XSS)实战',
       tags:['Web安全','XSS'],
       link:'/web-security/Web安全之跨站脚本攻击(XSS)实战.html',
