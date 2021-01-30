@@ -1561,6 +1561,121 @@ window.REACT_ARTICLES = [
 
 window.V8_ARTICLES = [
   {
+      title:'提高Javscript在V8中性能的技巧',
+      tags:['v8','性能'],
+      link:'https://mp.weixin.qq.com/s/Sc-sj51arrRJ6rG9lwqbQw',
+      summary: `任何性能优化建议都有它的适用场景，追求好的性能没有问题，但有时候关注深层次的优化建议有可能会分散你解决实际问题的精力。在关注性能优化建议之前，你可以通过类似PageSpeed这样的测速工具来检查一下你的代码并提高得分，这可以避免过早的尝试进行优化。本文讲述的就是专门针对V8，提高Javascript在V8中执行性能而提出的建议。`,
+      date:'2019-11-28',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'v8'
+  },
+  {
+      title:'影响V8性能优化的原因',
+      tags:['v8','性能'],
+      link:'https://mp.weixin.qq.com/s/bq-231Ew_eedRgyNMnDhBQ',
+      summary: `本文会通过例子讲述影响 V8Crankshaft编译器性能的原因，并给出解释和建议。除非另做说明，下面的例子都是针对Crankshaft的。`,
+      date:'2019-11-26',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'v8'
+  },
+  {
+      title:'V8编译器的历史、挑战与发展',
+      tags:['v8','性能'],
+      link:'https://mp.weixin.qq.com/s/ad24Idio_89WIi-rspXEEA',
+      summary: `作为历史上第一个真正快速的 Javascript引擎， V8是在 2008年随着 Chrome浏览器一起推出的， V8引擎在发布时就比竞争对手速度快 10倍，得益于其优异的性能，一经发布就引起了巨大的轰动。时至今日， V8引擎的速度比 2008年版本也快了 10多倍。`,
+      date:'2019-11-24',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'v8'
+  },
+  {
+      title:'JIT之数值分配',
+      tags:['v8','性能'],
+      link:'https://mp.weixin.qq.com/s/9vs1dMqlLEeiQUN60CAw7g',
+      summary: `这是有关JIT编译系列的第二篇博客文章。上一篇文章介绍了即时代码生成，尤其是jit.js用法。如果您尚未阅读，建议您先熟悉一下。`,
+      date:'2019-11-25',
+      creator: 'DuLinRain',
+      recommend: false,
+      category: 'v8'
+  },
+  {
+      title:'Javascript即时编译(JIT)',
+      tags:['v8','性能'],
+      link:'https://mp.weixin.qq.com/s/xzUaMlGm4so447nLn2wYWA',
+      summary: `编译器的编译方式有很多种，通常可分为动态编译和静态编译。而JIT编译狭义来说是当某段代码即将第一次被执行时进行编译，实际上是动态编译的一种。
+很多开发者都听说过即时(JIT，just in time)编译器以及它是如何让较慢的解释性语言以与原生代码相匹敌的速度运行。然而，很多人并不知道JIT到底是如何工作的，甚至只有很少很少的人会写自己的编译器。
+在我们的工作中，可能离编译最近的可能是使用Babel对ES6代码进行转译已经通过构建工具进行代码压缩等，这里面其实都涉及到或多或少编译器的基本概念与知识`,
+      date:'2019-11-23',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'v8'
+  },
+  {
+      title:'V8 垃圾回收',
+      tags:['v8','性能'],
+      link:'https://mp.weixin.qq.com/s/RvH_gmDId37QT8eEaZVzEg',
+      summary: `我们都知道，浏览器进行垃圾回收通常有两种常见的模式：标记清除 和 引用计数。引用计数由于存在循环引用的问题，所以从2008年起，主流的现代浏览器都采用的是标记清除的方式进行垃圾回收。时至今日，十多年一晃而过，V8使用的仍旧是标记清除的垃圾回收机制，但V8在此之上做了很多改进和优化，本文将讲述这些内容。`,
+      date:'2019-09-01',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'v8'
+  },
+  {
+      title:'V8中JS类型的表示与性能影响',
+      tags:['v8','性能'],
+      link:'https://mp.weixin.qq.com/s/sFz1fspR4HdpT5wCerBO5Q',
+      summary: `阅读完本文你将了解一下问题：
+      1. JS数据类型在内存中是如何表示的？
+      2. 相同JS类型在内存中是相同的存储形式吗？
+      3. 给JS变量赋不同类型的值，底层会做哪些操作？
+      4. 对于设置了Object.preventExtensions()对象，为其属性赋一个不同类型的值会带来什么后果？
+      5. Smi、 HeapNumber、 MutableHeapNumber有什么区别？
+      6. React issue(#14365(https://github.com/facebook/react/issues/14365)) 为什么会导致性能陡降？
+      `,
+      date:'2019-09-01',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'v8'
+  },
+  {
+      title:'详解V8中的sort',
+      tags:['v8','性能'],
+      link:'https://mp.weixin.qq.com/s/OyOyU78wwoR8P78HI39UrQ',
+      summary: `在JS中排序是很困难的。本文将讲述排序算法和JS语言交互过程中的一些怪异，并且讲述V8是如何将sort算法优化成稳定排序算法的。读完本文后，你会对下面几个问题有了答案：
+      1. 不同浏览器中sort表现一致吗？
+      2. V8 中sort的工作步骤？
+      3. V8 中sort是稳定排序吗？
+      4. V8 中sort采用的是什么算法?
+      5. V8 中sort是用什么语言实现的？
+      `,
+      date:'2019-08-31',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'v8'
+  },
+  {
+      title:'V8代码缓存(Code caching)的改进',
+      tags:['v8','性能'],
+      link:'https://mp.weixin.qq.com/s/YNSVdrqfLvdoOKdwdd3vCw',
+      summary: 'V8使用代码缓存技术来缓存经常使用的脚本。 从Chrome66开始，我们可以缓存更多的代码。 这会带来20-40%的解析和编译时间。V8 使用2种代码缓存技术来缓存生成的代码。第一种是内存缓存，每个V8实例都拥有该功能。代码在初次编译后被存在该缓存中，源代码的string作为key。这在随后相同的V8实例中都可用。另外一种代码缓存会序列化编译后生成的代码，并将它们存储在磁盘。这种缓存不限定某个V8实例可以用，他可以被不同的V8实例所用。',
+      date:'2019-07-27',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'v8'
+  },
+  {
+      title:'V8代码缓存(Code caching)',
+      tags:['v8','性能'],
+      link:'https://mp.weixin.qq.com/s/YNSVdrqfLvdoOKdwdd3vCw',
+      summary: 'V8使用即时编译(just-in-time compilation, JIT)来执行JS代码。这意味着在JS代码被执行之前，它需要先被解析和编译——这将会带了很大的负荷。 代码缓存技术是用来减轻这些负荷的技术。 当脚本被第一次编译的时候，会产生并存储缓存数据。下次一V8需要编译同样脚本的时候，即使在不同的V8实例，它都能使用缓存数据来重新创建编译后的结果，而不必重新编译。这样会导致脚本被更快地执行。',
+      date:'2019-07-26',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'v8'
+  },
+  {
       title:'详解await在V8底层的实现',
       tags:['await','v8'],
       link:'/v8/详解await在V8底层的实现.html',
