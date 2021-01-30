@@ -1173,6 +1173,56 @@ window.JAVASCRIPT_DESIGN_PATTERN_ARTICLES = [
 
 window.NODEJS_ARTICLES = [
   {
+      title:'egg环境变量解析规则与源码',
+      tags:['nodejs', 'egg'],
+      link:'https://mp.weixin.qq.com/s/AnvUVF9WL_1R_HCr2_bN-Q',
+      summary: `egg官网对egg的运行环境有详尽的文字说明(https://eggjs.org/zh-cn/basics/env.html), 大体上，设置egg环境变量有以下2种方式：1. 通过 config/env 文件指定，该文件的内容就是运行环境，如 prod。一般通过构建工具来生成这个文件。2. 通过 EGGSERVERENV 环境变量指定。`,
+      date:'2019-09-09',
+      creator: 'DuLinRain',
+      category: 'nodejs'
+  },
+  {
+      title:'koa详解',
+      tags:['nodejs', 'koa'],
+      link:'https://mp.weixin.qq.com/s/AnvUVF9WL_1R_HCr2_bN-Q',
+      summary: `本文将详细讲述koa的实现原理,我们将带着一系列的问题，循序渐进的讲述koa的整个实现。通过本文，你讲了解到一下几点：1. 使用koa搭建http服务与使用node内置http模块创建有什么区别？
+      2.koa的中间件是如何级联并实现洋葱圈模式的？ 3. koa中的ctx是如何实现的？ 4. koa中request和response是如何实现的？ 5. koa中request和response与node内置http模块的req和res有什么区别？
+      6. koa中ctx.xxx方法都是如何实现的？ 7. koa的整体架构
+      `,
+      date:'2019-07-28',
+      creator: 'DuLinRain',
+      category: 'nodejs'
+  },
+  {
+      title:'每天学习一个node包——fresh',
+      tags:['nodejs'],
+      link:'https://mp.weixin.qq.com/s/iHSp9IRwqVMIC7FZOHRm4A',
+      summary: `fresh包用来检查响应是否过期，当请求到达服务端后，服务端通常需要根据用户的缓存策略来决定响应类型：1. 如果用户设置了 Cache-Control:no-cache头，那么服务端总是必须返回新的，fresh的结果为false，这时响应的code是200 2. 否则，如果用户的请求是条件请求，则根据header中的字段决定响应是否过期，如果已过期，则fresh为false, 响应是200。否则fresh为true，返回304（not modify）。`,
+      date:'2019-06-25',
+      creator: 'DuLinRain',
+      category: 'nodejs'
+  },
+  {
+      title:'每天学一个node包——egg-cluster',
+      tags:['nodejs', '服务部署'],
+      link:'https://mp.weixin.qq.com/s/yVnPywJPTqeLT4wOEKQV_Q',
+      summary: `egg-cluster包用于管理egg以集群模式启动的时候的各种进程，处理进程之间的通信。 根据官网文档的描述，egg的启动时序如下: 1. Master 启动后先 fork Agent 进程 2. Agent 初始化成功后，通过 IPC 通道通知 Maste 3. Master 再 fork 多个 App Worker 4. App Worker 初始化成功，通知 Master 5. 所有的进程初始化成功后，Master 通知 Agent 和 Worker 应用启动成功. 上述所有的过程是通过egg-cluster实现的。 所以我们来学习一下egg-cluster的源码。`,
+      date:'2019-06-23',
+      creator: 'DuLinRain',
+      recommend: true, 
+      category: 'nodejs'
+  },
+  {
+      title:'每天学一个node包——cfork',
+      tags:['nodejs', '服务部署'],
+      link:'https://mp.weixin.qq.com/s/BWGa1WAciiRdB8x3UdLJ4g',
+      summary: `因为单个 Node.js 实例运行在单个线程中。 为了充分利用多核系统，有时需要启用一组 Node.js 进程去处理负载任务。 egg在以集群模式启动的时候会用cfork包去fork一些worker进程。`,
+      date:'2019-06-22',
+      creator: 'DuLinRain',
+      recommend: true, 
+      category: 'nodejs'
+  },
+  {
       title:'NodeJS 事件循环(Event Loop) Part5',
       tags:['nodejs', 'EventLoop'],
       link:'https://mp.weixin.qq.com/s/trRtaEkf_g8qQ8QjK3JftQ',
