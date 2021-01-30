@@ -28,22 +28,25 @@ window.GIT_LINK_LIST = [{
   title: '低代码框架AMIS',
   link: 'https://github.com/baidu/amis'
 }, {
-  title: 'ejs模板引擎漏洞修复',
+  title: 'ejs模板「任意代码注入」漏洞',
   link: 'https://github.com/mde/ejs/pull/573'
 }, {
-  title: 'single-spa微前端框架fix',
+  title: 'rollup插件「目录遍历」漏洞',
+  link: 'https://github.com/fkei/rollup-plugin-server/pull/1'
+}, {
+  title: 'single-spa微前端框架bugfix',
   link: 'https://github.com/single-spa/single-spa/pull/519'
 }, {
-  title: 'NPM包curjs漏洞修复',
+  title: 'curjs「命令注入」漏洞',
   link: 'https://github.com/jcrowe206/curljs/pull/2'
 }, {
-  title: '低代码可视化编辑器amis-editor漏洞发现',
+  title: '低代码编辑器amis-editor「XSS」漏洞',
   link: 'https://github.com/fex-team/amis-editor-demo/issues/71'
 }, {
-  title: 'get-npm-package-version包漏洞修复',
+  title: 'get-npm-package-version「命令注入」漏洞',
   link: 'https://github.com/hoperyy/get-npm-package-version/pull/2'
 }, {
-  title: 'ElementUI 时间组件fix',
+  title: 'ElementUI 时间组件bugfix',
   link: 'https://github.com/ElemeFE/element/pull/7567'
 }, {
   title: 'vuex文档',
