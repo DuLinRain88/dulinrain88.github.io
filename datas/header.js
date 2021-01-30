@@ -5,8 +5,8 @@ window.MENU_CONFIG = [{
   name: 'React',
   type: 'react'
 }, {
-  name: 'CSS',
-  type: 'css'
+  name: 'NodeJs',
+  type: 'nodejs'
 }, {
   name: 'Web安全',
   type: 'web-security'
@@ -17,17 +17,17 @@ window.MENU_CONFIG = [{
   name: 'V8',
   type: 'v8'
 }, {
-  name: 'ES6',
-  type: 'es6'
-}, {
-  name: 'NodeJs',
-  type: 'nodejs'
-}, {
   name: 'Go',
   type: 'go'
 }, {
+  name: 'ES6',
+  type: 'es6'
+}, {
   name: 'Babel',
   type: 'babel'
+}, {
+  name: 'CSS',
+  type: 'css'
 }, {
   name: 'JavasSript基础',
   type: 'basic-javascript'
