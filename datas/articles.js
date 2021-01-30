@@ -1173,6 +1173,77 @@ window.JAVASCRIPT_DESIGN_PATTERN_ARTICLES = [
 
 window.NODEJS_ARTICLES = [
   {
+      title:'NodeJS 事件循环(Event Loop) Part5',
+      tags:['nodejs', 'EventLoop'],
+      link:'https://mp.weixin.qq.com/s/trRtaEkf_g8qQ8QjK3JftQ',
+      summary: `NodeJS 事件循环(Event Loop) Part5——最佳实践。欢迎回到事件循环系列。到目前为止，在事件循环这一系列中，我们讨论了事件循环和它的不同节拍， setImmediates, nextTicks, timers, I/O。我相信你现在对事件循环有了更深入的理解。因此，让我们讨论一下最佳实践，讨论在开发NodeJS应用程序时候该做什么和不该做什么从而达到最好的性能和结果。`,
+      date:'2019-06-06',
+      creator: 'DuLinRain',
+      recommend: true, 
+      category: 'nodejs'
+  },
+  {
+      title:'NodeJS 事件循环(Event Loop) Part4',
+      tags:['nodejs', 'EventLoop'],
+      link:'https://mp.weixin.qq.com/s/GMJeQbPx8ZJfoeM_Ifq6LA',
+      summary: `NodeJS 事件循环(Event Loop) Part4 —— Handling I/O 。欢迎回到NodeJS事件循环系列。在本博文中，我将详细谈谈NodeJS是如何处理I/O的。并且我希望去深入探究事件循环的实现以及I/O如何与其他异步操作一起工作。如果你错过了该系列的前面几篇博文，我强烈推荐你回过头去看一看。`,
+      date:'2019-06-05',
+      creator: 'DuLinRain',
+      recommend: true, 
+      category: 'nodejs'
+  },
+  {
+      title:'NodeJS 事件循环(Event Loop) Part3',
+      tags:['nodejs', 'EventLoop'],
+      link:'https://mp.weixin.qq.com/s/Z-QKh58i0f6PYV6Hh0z0_w',
+      summary: `NodeJS 事件循环(Event Loop) Part3 —— Promise, Next-Ticks, and Immediates。欢迎回到NodeJS事件循环系列,在该系列的第一篇博文中，我们讨论了NodeJS的整体概况及其不同的阶段。随后在第二篇博文中，我们讨论了定时器(timers)和immediates 在事件循环中的存在以及事件队列是如何按步骤执行的。在本文中，我们将讨论事件循环是如何处理resolved/rejected promises(包括原生Promise，Q promises, Bluebird promises) 和 next tick callbacks的。如果你还不熟悉Promise,建议你先了解它一下。相信我，会非常有趣。`,
+      date:'2019-06-04',
+      creator: 'DuLinRain',
+      recommend: true, 
+      category: 'nodejs'
+  },
+  {
+      title:'NodeJS 事件循环(Event Loop) Part2',
+      tags:['nodejs', 'EventLoop'],
+      link:'https://mp.weixin.qq.com/s/Z-QKh58i0f6PYV6Hh0z0_w',
+      summary: `NodeJS 事件循环(Event Loop) Part2 —— Timers, Immediates and Process.nextTick。欢迎回到事件循环(Event Loop)文章系列，在该系列的第一部分，我讲述了NodeJS 事件循环的整体架构。在这篇博文中，我将结合代码片段详细地讨论在第一篇博文中提到的三种重要的队列。它们是timers, immediates 和 process.nextTick callbacks。`,
+      date:'2019-06-03',
+      creator: 'DuLinRain',
+      recommend: true, 
+      category: 'nodejs'
+  },
+  {
+      title:'NodeJS 事件循环(Event Loop) Part1',
+      tags:['nodejs', 'EventLoop'],
+      link:'https://mp.weixin.qq.com/s/Z-QKh58i0f6PYV6Hh0z0_w',
+      summary: `NodeJS区别于其它编程平台主要是在于它处理I/O的方式。 在别人介绍NodeJS的时候我们总会听到他们说NodeJS是“一个基于google V8 javascript引
+擎的非阻塞、事件驱动的平台”。那这句话到底是什么意思呢？“非阻塞”以及“事件驱动”到底意味着什么呢？这些问题的所有答案埋藏在NodeJS的核心部分——Event Loop(事件循环)。
+在这一系列的博文中，我将讲述什么是Event Loop，它是如何工作的，它如何影响我们的应用程序以及如何充分地利用它。为什么要用一系列的博文而不是一篇呢？好吧，如果写成一
+篇的话将会非常的长，并且我有可能会丢失比较重要的内容，因此我为此写了一个系列的文章。在这第一篇博文中，我将讲述“NodeJS是如何工作的”，“它如何访问I/O”以及“它是怎样在不同平台工作的”等内容。`,
+      date:'2019-05-31',
+      creator: 'DuLinRain',
+      recommend: true, 
+      category: 'nodejs'
+  },
+  {
+      title:'每天学一个node包——http-errors',
+      tags:['nodejs'],
+      link:'https://mp.weixin.qq.com/s/-WEiHfo0PTJYOwf8p8nJeQ',
+      summary: `http-errors用来创建http 错误，通常是4xx、 5xx类型的错误。在koa以及koa-router中都有用到。`,
+      date:'2019-05-28',
+      creator: 'DuLinRain',     
+      category: 'nodejs'
+  },
+  {
+      title:'每天学一个node包——statues',
+      tags:['nodejs'],
+      link:'https://mp.weixin.qq.com/s/a_yx2Mayro4uZU2zTALWYA',
+      summary: `statues包用于提供http的返回码以及对应的含义列表。 我们可以很方便的通过code码查询对应的含义或者相反。 koa以及koa-router中都有使用statuses包。`,
+      date:'2019-05-27',
+      creator: 'DuLinRain',     
+      category: 'nodejs'
+  }, 
+  {
       title:'每天学习一个node包之mime',
       tags:['nodejs'],
       link:'/nodejs/每天学习一个node包之mime.html',
