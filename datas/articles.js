@@ -1983,5 +1983,4 @@ window.ALL_ARTICLES = [
   ...window.V8_ARTICLES,
   ...window.VUE_ARTICLES,
   ...window.WEB_SECURITY_ARTICLES,
-  ...window.WEB_SECURITY_ARTICLES
 ]
