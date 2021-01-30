@@ -1015,7 +1015,7 @@ window.GO_ARTICLES = [
   {
       title:'GO调度原理一：操作系统调度',
       tags:['go'],
-      link:'/go/GO调度原理一：操作系统调度.html',
+      link:'https://mp.weixin.qq.com/s/wT_lGkC8BvA4fS6ggERDQQ',
       summary: `这是一个关于Go调度原理的系列文章，共有三个部分，本文是其中的第一篇。
       本系列文章将讲述Go程序调度背后的机制和语义。本文的重点则是操作系统调度。
       Go调度器的设计和实现使得多线程Go程序更加高效、性能更好。这需要归功于Go调度器在设计时对
@@ -1028,7 +1028,7 @@ window.GO_ARTICLES = [
   {
       title:'Go调度原理二：Go调度',
       tags:['go'],
-      link:'/go/Go调度原理二：Go调度.html',
+      link:'https://mp.weixin.qq.com/s/gAm2MSLVO_1slw-Cgis3aA',
       summary: `在该系列的第一篇文章中，我们已经解释了操作系统调度的各个方面，我认为这对理解和
       欣赏Go调度的语义非常重要。在这一部分，我将从语义层面讲一下Go的调度是如何进行的。Go调度调度
       本身其实很复杂，很多细节不用过分关注，重要的是通过一个模型来理解Go的调度机制，这有助于在实
@@ -1041,7 +1041,7 @@ window.GO_ARTICLES = [
   {
       title:'GO调度原理三：并发',
       tags:['go'],
-      link:'/go/GO调度原理三：并发.html',
+      link:'https://mp.weixin.qq.com/s/awyKxAI8eH78oynJAGELaw',
       summary: `并发的意思就是“乱序执行”，对一组本来应该顺序执行的指令，以某种方式乱序地执行他们并得
       到同样的输出结果。对于摆在你面前的问题而言，乱序执行显然会增加价值。这里所说的价值是指，以增加复
       杂性为代价来换取更好的性能。当然主要还是取决于你所面对的问题，可能有时候乱序执行并不可行或者不会
