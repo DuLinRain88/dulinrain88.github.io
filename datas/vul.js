@@ -1,5 +1,26 @@
 window.VUL_DB = [
 {
+    name: "Improper Input Validation",
+    link: "https://snyk.io/vuln/SNYK-JS-ELECTRON-1064555",
+    version: "electron<11.2.1",
+    level: "M",
+    date: "2021-01-24"
+},
+{
+    name: "Use After Free",
+    link: "https://snyk.io/vuln/SNYK-JS-ELECTRON-1064558",
+    version: "electron<11.2.1",
+    level: "H",
+    date: "2021-01-24"
+},
+{
+    name: "Use After Free",
+    link: "https://snyk.io/vuln/SNYK-JS-ELECTRON-1064561",
+    version: "electron<11.2.1",
+    level: "H",
+    date: "2021-01-24"
+},
+{
     name: "Cross-site Scripting (XSS)",
     link: "https://snyk.io/vuln/SNYK-JS-VISTIMELINE-1063500",
     version: "vis-timeline<7.4.4",
