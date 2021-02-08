@@ -38,7 +38,16 @@ window.BABEL_ARTICLES = [
     }, 
 ]
 window.BASIC_JAVASCRIPT_ARTICLES = [
-  {
+    {
+      title:'几种for循环性能比较',
+      tags:['JavaScript','性能'],
+      link:'/basic-javascript/几种for循环性能比较.html',
+      summary: '直接说结论：for(reverse) > for > forEach > for ...of，理论上for(reverse) > for是肯定成立的，实际上可能会是相反，其它几个关系不变。性能和代码可读性恰好相反。',
+      date:'2021-02-08',
+      creator: 'DuLinRain',
+      category: 'basic-javascript'
+    }, 
+    {
       title:'JavaScript字符集之一坨翔引发的血案',
       tags:['JavaScript','Unicode'],
       link:'/basic-javascript/JavaScript字符集之一坨翔引发的血案.html',
