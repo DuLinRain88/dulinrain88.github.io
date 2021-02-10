@@ -1238,6 +1238,15 @@ window.JAVASCRIPT_DESIGN_PATTERN_ARTICLES = [
 
 window.NODEJS_ARTICLES = [
   {
+      title:'每天学一个npm包之——promise-pool',
+      tags:['nodejs', 'npm'],
+      link:'/nodejs/每天学一个npm包之——promise-pool.html',
+      summary: `Promise.all是我们进行并发的常用手段，但是有时候，我们所面对的调用的目标不太能接受很大并发量，这时候直接用promise.all就有问题了，需要 对Promise.all进行调控。@supercharge/promise-pool就是一个很好用的工具包。在学习@supercharge/promise-pool的具体实现之前，我们先来尝试自己实现一个。`,
+      date:'2021-02-10',
+      creator: 'DuLinRain',
+      category: 'nodejs'
+  },
+  {
       title:'每天学一个npm包之——goodies',
       tags:['nodejs', 'npm'],
       link:'/nodejs/每天学一个npm包之——goodies.html',
