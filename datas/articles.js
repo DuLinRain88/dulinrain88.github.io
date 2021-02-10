@@ -1899,6 +1899,16 @@ window.VUE_ARTICLES = [
 
 window.WEB_SECURITY_ARTICLES = [
     {
+      title:'HTTP请求走私漏洞PoC',
+      tags:['Web安全','劫持'],
+      link:'/web-security/HTTP请求走私漏洞PoC.html',
+      summary: '由于NodeJS内置基础库http_parse存在的漏洞，导致基于NodeJs很多版本部署的服务可能收到请求走私攻击。',
+      date:'2021-01-20',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'web-security'
+    }, 
+    {
       title:'恶意JS脚本逆向分析小记',
       tags:['Web安全','劫持'],
       link:'https://mp.weixin.qq.com/s/s5Tauiu2HGwuBfjjujNkXA',
