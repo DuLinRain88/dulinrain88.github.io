@@ -1238,6 +1238,15 @@ window.JAVASCRIPT_DESIGN_PATTERN_ARTICLES = [
 
 window.NODEJS_ARTICLES = [
   {
+      title:'每天学一个npm包之——goodies',
+      tags:['nodejs', 'npm'],
+      link:'/nodejs/每天学一个npm包之——goodies.html',
+      summary: `@supercharge/goodies是一个npm包，提供几个帮助函数便于编写JS代码。其中主要的2个方法是tap(value, callback)和upon(value, callback)。除此之外还提供一些判断Promise、async的辅助函数。我们先来看一下这些函数的用法。`,
+      date:'2021-02-10',
+      creator: 'DuLinRain',
+      category: 'nodejs'
+  },
+  {
       title:'egg环境变量解析规则与源码',
       tags:['nodejs', 'egg'],
       link:'https://mp.weixin.qq.com/s/AnvUVF9WL_1R_HCr2_bN-Q',
