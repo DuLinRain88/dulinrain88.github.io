@@ -1306,7 +1306,27 @@ window.NODEJS_ARTICLES = [
       category: 'nodejs'
   },
   {
-      title:'NodeJS 事件循环(Event Loop) Part5',
+      title:'NodeJS事件循环(Event Loop) Part7—浏览器 VS Nodejs',
+      tags:['nodejs', 'EventLoop'],
+      link:'/nodejs/NodeJS事件循环(Event%20Loop)%20Part7——浏览器%20VS%20Nodejs.html',
+      summary: `事件循环对于新人来说是个非常令人困惑的主题并且通常不是百分之百理解。更令人困惑的是，你经常会遇到2个比较流行的词：“NodeJS Event Loop” 和 “JavaScript Event Loop”。前者顾名思义，后者则是指运行在浏览器中的事件循环。既然有这2个区分，那么就会引申出如下问题：1. 这2个东西是一样的吗？还是说只是有些相似？亦或是完全不同？ 2. 如果不同的话，不同点在哪里？ 3. 如果相同的话，为什么我们要区分“NodeJS Event Loop” 和 “JavaScript Event Loop”？ 简单说的话，是的，他们的某些行为很相似。另一方面，它们又在有些方面有所不同。因此，在这篇文章中，我将使用一些例子来讨论它们的不同之处，并借此帮你理清一些令你困扰的问题。`,
+      date:'2020-02-17',
+      creator: 'DuLinRain',
+      recommend: true, 
+      category: 'nodejs'
+  },
+  {
+      title:'NodeJS 事件循环(Event Loop) Part6——定时器和微任务在Node v11及其之后的新变化',
+      tags:['nodejs', 'EventLoop'],
+      link:'/nodejs/NodeJS事件循环(Event%20Loop)%20Part6——定时器和微任务在Node%20v11及其之后的新变化.html',
+      summary: `这篇文章是继NodeJS事件循环之后的一篇比较简短的文章。在之前的系列文章中，我详细讲述了定时器(Timers, setTimeout/setInterval)、setImmediate、process.nextTick，Promise等等内容。然而，从Node v11.0.0版本开始，setTimeout, setImmediate, process.nextTick 和 Promises的行为有了重大变化。本文将通过对比这些函数在Node<v11.0.0 和 Node ≥ v11.0.0 中的不同表现来讨论它们的变化。如果你错过了前面的系列文章，我建议你回过头去翻一翻。`,
+      date:'2019-10-09',
+      creator: 'DuLinRain',
+      recommend: true, 
+      category: 'nodejs'
+  },
+  {
+      title:'NodeJS 事件循环(Event Loop) Part5——最佳实践',
       tags:['nodejs', 'EventLoop'],
       link:'https://mp.weixin.qq.com/s/trRtaEkf_g8qQ8QjK3JftQ',
       summary: `NodeJS 事件循环(Event Loop) Part5——最佳实践。欢迎回到事件循环系列。到目前为止，在事件循环这一系列中，我们讨论了事件循环和它的不同节拍， setImmediates, nextTicks, timers, I/O。我相信你现在对事件循环有了更深入的理解。因此，让我们讨论一下最佳实践，讨论在开发NodeJS应用程序时候该做什么和不该做什么从而达到最好的性能和结果。`,
@@ -1316,7 +1336,7 @@ window.NODEJS_ARTICLES = [
       category: 'nodejs'
   },
   {
-      title:'NodeJS 事件循环(Event Loop) Part4',
+      title:'NodeJS 事件循环(Event Loop) Part4 —— Handling I/O',
       tags:['nodejs', 'EventLoop'],
       link:'https://mp.weixin.qq.com/s/GMJeQbPx8ZJfoeM_Ifq6LA',
       summary: `NodeJS 事件循环(Event Loop) Part4 —— Handling I/O 。欢迎回到NodeJS事件循环系列。在本博文中，我将详细谈谈NodeJS是如何处理I/O的。并且我希望去深入探究事件循环的实现以及I/O如何与其他异步操作一起工作。如果你错过了该系列的前面几篇博文，我强烈推荐你回过头去看一看。`,
@@ -1326,9 +1346,9 @@ window.NODEJS_ARTICLES = [
       category: 'nodejs'
   },
   {
-      title:'NodeJS 事件循环(Event Loop) Part3',
+      title:'NodeJS 事件循环(Event Loop) Part3 —— Promise, Next-Ticks, and Immediates',
       tags:['nodejs', 'EventLoop'],
-      link:'https://mp.weixin.qq.com/s/Z-QKh58i0f6PYV6Hh0z0_w',
+      link:'https://mp.weixin.qq.com/s/Afk4RbN-1bj2I1siJ_ffjQ',
       summary: `NodeJS 事件循环(Event Loop) Part3 —— Promise, Next-Ticks, and Immediates。欢迎回到NodeJS事件循环系列,在该系列的第一篇博文中，我们讨论了NodeJS的整体概况及其不同的阶段。随后在第二篇博文中，我们讨论了定时器(timers)和immediates 在事件循环中的存在以及事件队列是如何按步骤执行的。在本文中，我们将讨论事件循环是如何处理resolved/rejected promises(包括原生Promise，Q promises, Bluebird promises) 和 next tick callbacks的。如果你还不熟悉Promise,建议你先了解它一下。相信我，会非常有趣。`,
       date:'2019-06-04',
       creator: 'DuLinRain',
@@ -1336,9 +1356,9 @@ window.NODEJS_ARTICLES = [
       category: 'nodejs'
   },
   {
-      title:'NodeJS 事件循环(Event Loop) Part2',
+      title:'NodeJS 事件循环(Event Loop) Part2 —— Timers, Immediates and Process.nextTick',
       tags:['nodejs', 'EventLoop'],
-      link:'https://mp.weixin.qq.com/s/Z-QKh58i0f6PYV6Hh0z0_w',
+      link:'https://mp.weixin.qq.com/s/fWryVuZkMtgpHlwmxXmbSg',
       summary: `NodeJS 事件循环(Event Loop) Part2 —— Timers, Immediates and Process.nextTick。欢迎回到事件循环(Event Loop)文章系列，在该系列的第一部分，我讲述了NodeJS 事件循环的整体架构。在这篇博文中，我将结合代码片段详细地讨论在第一篇博文中提到的三种重要的队列。它们是timers, immediates 和 process.nextTick callbacks。`,
       date:'2019-06-03',
       creator: 'DuLinRain',
@@ -1346,7 +1366,7 @@ window.NODEJS_ARTICLES = [
       category: 'nodejs'
   },
   {
-      title:'NodeJS 事件循环(Event Loop) Part1',
+      title:'NodeJS 事件循环(Event Loop) Part1 —— 总体概况',
       tags:['nodejs', 'EventLoop'],
       link:'https://mp.weixin.qq.com/s/Z-QKh58i0f6PYV6Hh0z0_w',
       summary: `NodeJS区别于其它编程平台主要是在于它处理I/O的方式。 在别人介绍NodeJS的时候我们总会听到他们说NodeJS是“一个基于google V8 javascript引
