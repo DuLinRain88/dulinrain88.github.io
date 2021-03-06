@@ -1310,7 +1310,7 @@ window.NODEJS_ARTICLES = [
       tags:['nodejs', 'EventLoop'],
       link:'/nodejs/NodeJS事件循环(Event%20Loop)%20Part7——浏览器%20VS%20Nodejs.html',
       summary: `事件循环对于新人来说是个非常令人困惑的主题并且通常不是百分之百理解。更令人困惑的是，你经常会遇到2个比较流行的词：“NodeJS Event Loop” 和 “JavaScript Event Loop”。前者顾名思义，后者则是指运行在浏览器中的事件循环。既然有这2个区分，那么就会引申出如下问题：1. 这2个东西是一样的吗？还是说只是有些相似？亦或是完全不同？ 2. 如果不同的话，不同点在哪里？ 3. 如果相同的话，为什么我们要区分“NodeJS Event Loop” 和 “JavaScript Event Loop”？ 简单说的话，是的，他们的某些行为很相似。另一方面，它们又在有些方面有所不同。因此，在这篇文章中，我将使用一些例子来讨论它们的不同之处，并借此帮你理清一些令你困扰的问题。`,
-      date:'2020-02-17',
+      date:'2021-02-17',
       creator: 'DuLinRain',
       recommend: true, 
       category: 'nodejs'
