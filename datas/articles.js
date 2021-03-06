@@ -1928,6 +1928,36 @@ window.VUE_ARTICLES = [
 
 window.WEB_SECURITY_ARTICLES = [
     {
+      title:'点击劫持原理和防御',
+      tags:['Web安全','点击劫持'],
+      link:'/web-security/点击劫持原理和防御.html',
+      summary: '在本节中，我们将讲述什么是点击劫持、常见点击劫持的例子以及如何防范点击劫持。点击劫持是一种基于界面的攻击，在这种攻击中，通过引导用户点击诱饵网站中的某些内容，从而诱骗用户点击隐藏的目标网站上的可操作内容。',
+      date:'2020-12-22',
+      creator: 'DuLinRain',
+      recommend: false,
+      category: 'web-security'
+    }, 
+    {
+      title:'密码重置中毒',
+      tags:['Web安全','密码重置'],
+      link:'/web-security/密码重置中毒.html',
+      summary: '密码重置中毒是一种漏洞利用技术，攻击者可以利用该技术来操纵受攻击的网站，让该网站生成一个指向攻击者控制下的域名的密码重置链接。这种行为可以被用来窃取重置任意用户密码所需要的token，并最终破坏受害者的账号。',
+      date:'2021-01-04',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'web-security'
+    }, 
+    {
+      title:'OAuth授权类型',
+      tags:['Web安全','OAuth2.0'],
+      link:'/web-security/OAuth授权类型.html',
+      summary: '在本部分，我们将介绍2种常见的OAuth授权类型，如果在OAuth方面你还是个新手，那么强烈建议你先看这篇文章再去看OAuth身份验证漏洞。OAuth授予类型决定了OAuth流程中涉及的确切步骤顺序。授予类型还会影响客户端应用程序在每个阶段与OAuth服务进行通信的方式，包括access token本身的发送方式。因此，授权类型通常称为“ OAuth流”。',
+      date:'2020-12-28',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'web-security'
+    }, 
+    {
       title:'命令注入（Conmand Injection）案例分析',
       tags:['Web安全','命令注入'],
       link:'/web-security/命令注入（Conmand Injection）案例分析.html',
