@@ -1928,6 +1928,36 @@ window.VUE_ARTICLES = [
 
 window.WEB_SECURITY_ARTICLES = [
     {
+      title:'命令注入（Conmand Injection）案例分析',
+      tags:['Web安全','命令注入'],
+      link:'/web-security/命令注入（Conmand Injection）案例分析.html',
+      summary: '命令注入的原理就是将用户的输入作为命令直接执行，未进行严格校验, get-npm-package-version 这个包的作用是用户指定npm包名和仓库，该命令可以查找到该包对应的版本。内部实际上是通过npm view pkgname version --registry xxx 命令来实现的',
+      date:'2021-01-26',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'web-security'
+    }, 
+    {
+      title:'ejs模板任意代码注入（Arbitrary Code Injection）',
+      tags:['Web安全','任意代码注入'],
+      link:'/web-security/ejs模板任意代码注入（Arbitrary Code Injection）.html',
+      summary: 'ejs是一个非常流行的开源NPM包，其在模板编译过程中，内部生成的模板会有一个在最后添加注释的操作，导致存在任意代码注入（Arbitrary Code Injection）的逻辑漏洞',
+      date:'2021-01-26',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'web-security'
+    }, 
+    {
+      title:'原型污染（Prototype Pollution）原理和案例分析',
+      tags:['Web安全','原型污染'],
+      link:'/web-security/原型污染（Prototype Pollution）原理和案例分析.html',
+      summary: '原型污染是一种影响Javascript的漏洞。原型污染指的是攻击者利用某种手段在JavaScript构造原型（如对象）上注入属性的行为。JavaScript允许所有的对象属性被修改，这其中包括一些魔法属性如__proto__, constructor 和 prototype。攻击者操作这些属性，进行重写或者污染基础对象。Object.prototype上的属性被所有经过该原型链的对象所继承。这种情况发生后，可能导致拒绝服务攻击（通过触发JavaScript异常）或者远程代码执行。',
+      date:'2021-01-25',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'web-security'
+    }, 
+    {
       title:'HTTP请求走私漏洞PoC',
       tags:['Web安全','劫持'],
       link:'/web-security/HTTP请求走私漏洞PoC.html',
