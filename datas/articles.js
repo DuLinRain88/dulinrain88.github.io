@@ -1801,7 +1801,7 @@ window.V8_ARTICLES = [
   {
       title:'异步堆栈追踪：为什么await 会击败Promise#then()？',
       tags:['await','v8'],
-      link:'/v8/异步堆栈追踪：为什么await 会击败Promise#then()？.html',
+      link:'/v8/异步堆栈追踪：为什么await%20会击败Promise%23then()？.html',
       summary: '对开发者而言，与直接使用promise相比，使用async和await不仅仅会使得代码更易于阅读，而且可以让代码在JavaScript引擎中得到更好的优化。本文所写的关于异步代码的堆栈追踪就是其中一个优化。',
       date:'2020-04',
       creator: 'DuLinRain',
