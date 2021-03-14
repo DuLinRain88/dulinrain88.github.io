@@ -1534,7 +1534,17 @@ window.NODEJS_ARTICLES = [
 ]
 
 window.REACT_ARTICLES = [
-  {
+    {
+      title:'React会保证按照setState的调用顺序来更新状态吗？',
+      tags:['react'],
+      link:'/react/React会保证按照setState的调用顺序来更新状态吗？.html',
+      summary: '我们都知道，React可能异步进行状态更新，并且会使用批量渲染来提升性能。因此在调用setState立刻去拿到的state是永远不可信任的。但是我们是否可以信任React按照我们调用setState的顺序去更新state呢？并且在下面2中情况都是一样的吗?1.在相同组件中？2. 在不同组件中？',
+      date:'2020-03-31',
+      recommend: true,
+      creator: 'DuLinRain',
+      category: 'react'
+    }, 
+    {
       title:'React之受控组件与非受控组件',
       tags:['react'],
       link:'/react/React之受控组件与非受控组件.html',
