@@ -1938,6 +1938,16 @@ window.VUE_ARTICLES = [
 
 window.WEB_SECURITY_ARTICLES = [
     {
+      title:'小红书uid生成方法探究',
+      tags:['Web安全','爬虫'],
+      link:'/web-security/小红书uid生成方法探究.html',
+      summary: '在本节中，我们将讲述小红书uid的生成方式',
+      date:'2021-03-25',
+      creator: 'DuLinRain',
+      recommend: false,
+      category: 'web-security'
+    }, 
+    {
       title:'点击劫持原理和防御',
       tags:['Web安全','点击劫持'],
       link:'/web-security/点击劫持原理和防御.html',
