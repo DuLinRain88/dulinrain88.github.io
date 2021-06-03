@@ -223,6 +223,26 @@ window.CHROME_ARTICLES = [
       recommend: true,
       category: 'chrome'
   },
+  {
+      title:'net::ERR_INSUFFICIENT_RESOURCES 详解',
+      tags:['chrome'],
+      link:'/chrome/net::ERR_INSUFFICIENT_RESOURCES 详解.html',
+      summary: `在浏览器中发起大量请求的时候可能会遇到net::ERR_INSUFFICIENT_RESOURCES的报错信息，这是为什么呢？这其实与Chromium架构的实现有关。Chromium会限制每个渲染进程未完成请求（Outstanding Requset）的数量。一旦达到这个约束，后续的请求都会报net::ERR_INSUFFICIENT_RESOURCES错误。 这个限制是25MB，注意，限制的并不是请求的个数，而是请求所占用的资源数。而这个25MB并不包含请求体（试想，如果包含的话，上传个大文件就跪了），只是包含请求头的大小。在普通长度的请求头下，这个25MB转换成请求个数的话大概是在6000个。如果请求头本身比较大，那这个数量会降低。`,
+      date:'2020-11',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'chrome'
+  },
+  {
+      title:'Brotli压缩算法简介',
+      tags:['chrome'],
+      link:'/chrome/Brotli压缩算法简介.html',
+      summary: `Brotli压缩算法是google提出的较新的压缩算法，用于在浏览器替代传统的gzip等压缩算法。`,
+      date:'2021-06',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'chrome'
+  },
 ]
 window.CSS_ARTICLES = [
   {
