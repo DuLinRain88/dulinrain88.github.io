@@ -264,7 +264,7 @@ window.CHROME_ARTICLES = [
       summary: `Brotli压缩算法是google提出的较新的压缩算法，用于在浏览器替代传统的gzip等压缩算法。`,
       date:'2021-06',
       creator: 'DuLinRain',
-      recommend: fasle,
+      recommend: false,
       category: 'chrome'
   },
 ]
