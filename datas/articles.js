@@ -167,6 +167,30 @@ window.BASIC_JAVASCRIPT_ARTICLES = [
 ]
 window.CHROME_ARTICLES = [
   {
+      title:'async vs defer',
+      tags:['chrome'],
+      link:'/chrome/async vs defer.html',
+      summary: `在前面一篇文章理解关键渲染路径中，作者写过JavaScript文件在关键渲染路径上的影响：
+      JavaScript被视为一个“阻塞解析器的资源”。这意味着HTML文档解析被JavaScript阻塞。当解析器遇到<script>标签，不论它是内联的还是外联的，它都会停止HTML解析然后请求（如果资源是外联的）它并运行它。
+      如果我们的页面需要加载很多个JavaScript文件的话，这个情况可能会有些问题，因为这会影响首次渲染时间，不论文档是否依赖于这些资源。
+      幸运的是，<script>元素有2个属性，async 和 defer，这可以使我们对外联资源如何加载和执行有更多的掌控。
+      `,
+      date:'2021-03',
+      creator: 'DuLinRain翻译',
+      recommend: false,
+      category: 'chrome'
+  },
+  {
+      title:'理解关键渲染路径',
+      tags:['chrome'],
+      link:'/chrome/理解关键渲染路径.html',
+      summary: `当浏览器收到服务端响应的页面HTML的时候，需要做很多步骤从而使得页面渲染到屏幕上。在开始绘制之前的整个步骤顺序被称为“关键渲染路径”。 理解CRP的相关知识对于理解如何提高网站性能非常重要。CRP有6个步骤：`,
+      date:'2021-03',
+      creator: 'DuLinRain翻译',
+      recommend: false,
+      category: 'chrome'
+  },
+  {
       title:'Chromium多进程架构',
       tags:['chrome'],
       link:'/chrome/Chromium多进程架构.html',
@@ -240,12 +264,22 @@ window.CHROME_ARTICLES = [
       summary: `Brotli压缩算法是google提出的较新的压缩算法，用于在浏览器替代传统的gzip等压缩算法。`,
       date:'2021-06',
       creator: 'DuLinRain',
-      recommend: true,
+      recommend: fasle,
       category: 'chrome'
   },
 ]
 window.CSS_ARTICLES = [
-  {
+    {
+      title:'CSS新属性之aspect-ratio',
+      tags:['css'],
+      link:'/css/CSS新属性之aspect-ratio.html',
+      summary: 'aspect-ratio是CSS盒模型中定义的新的属性，用来设置元素的宽高比。目前最新的Chrome、Firefox浏览器都已支持，Safari浏览器也预计会在2021年支持。',
+      date:'2021-03',
+      creator: 'DuLinRain翻译',
+      recommend: false,
+      category: 'css'
+    }, 
+    {
       title:'扫二维码导致IOS系统机器强制重启的原理',
       tags:['css'],
       link:'/css/扫二维码导致IOS系统机器强制重启的原理.html',
