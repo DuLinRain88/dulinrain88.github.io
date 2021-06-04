@@ -1728,6 +1728,21 @@ window.REACT_ARTICLES = [
 
 window.V8_ARTICLES = [
   {
+      title:'Sparkplug —— 一个新的非优化JavaScript编译器',
+      tags:['v8','性能'],
+      link:'/v8/Sparkplug —— 一个新的非优化JavaScript编译器.html',
+      summary: `2021.05.27日V8发布了新的「非优化JavaScript编译器」—— Sparkplug。
+      为什么会有Sparkplug？
+      V8的编译器的由Full-Codegen发展到TurboFan有了很大的改进。但是一个高性能的引擎应当不止包含优化编译器，因为在进入优化编译器之前还有很多事情要做。
+      所以从2016年开始，V8开始在编译器之外进行提升JavaScript 的性能的研究。在2016年后，V8陆陆续续在解析器（Ignition）、流、对象模型、并发垃圾收集、缓存已编译的代码方面做了很多的工作。
+      然而，当V8团队在尝试改进实际初始 JavaScript 执行的性能时，他们在优化解释器（Ignition）时开始遇到限制。 主要表现在下面几个方面：
+      `,
+      date:'2021-06',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'v8'
+  },
+  {
       title:'提高Javscript在V8中性能的技巧',
       tags:['v8','性能'],
       link:'https://mp.weixin.qq.com/s/Sc-sj51arrRJ6rG9lwqbQw',
