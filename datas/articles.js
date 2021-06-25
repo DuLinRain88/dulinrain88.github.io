@@ -1292,6 +1292,24 @@ window.JAVASCRIPT_DESIGN_PATTERN_ARTICLES = [
 
 window.NODEJS_ARTICLES = [
   {
+      title:'NodeJS应用HMR的实现方式',
+      tags:['nodejs'],
+      link:'/nodejs/NodeJS应用HMR的实现方式.html',
+      summary: `前端项目的HMR我们都比较熟悉，NodeJS的项目HMR是怎么实现的呢？实际上本质上是一样的———监听文件变化并重新加载。但是与前端所谓的HMR不完全一样，NodeJS里的HMR可以认为只是HR（Hot Reload）。因为我们常见的模式都是监听到文件变动之后直接重启NodeJS应用。`,
+      date:'2021-06-10',
+      creator: 'DuLinRain',
+      category: 'nodejs'
+  },
+  {
+      title:'深入理解CommonJS模块',
+      tags:['nodejs'],
+      link:'/nodejs/深入理解CommonJS模块.html',
+      summary: `NodeJS里是原生支持CommonJS模块的。我们在写NodeJS的时候会随心所欲地在文件中直接用module.exports，exports, require等，就好像它们都是全局存在一样。实际上并不是这样的。NodeJS将每个文件都视为一个独立的模块，我们在文件中使用的module，exports, require实际上都只是在当前文件中存在的局部变量。除了前面提到的几个变量，还存在__filename, __dirname 这2个看着像是全局存在的变量。实际上，NodeJS在执行每个文件之前都会给它在外面包裹这么一层代码：`,
+      date:'2021-06-16',
+      creator: 'DuLinRain',
+      category: 'nodejs'
+  },
+  {
       title:'每天学一个npm包之——promise-pool',
       tags:['nodejs', 'npm'],
       link:'/nodejs/每天学一个npm包之——promise-pool.html',
