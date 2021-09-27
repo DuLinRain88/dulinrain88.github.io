@@ -1607,6 +1607,16 @@ window.NODEJS_ARTICLES = [
 
 window.REACT_ARTICLES = [
     {
+      title:'React事件',
+      tags:['react'],
+      link:'/react/React事件.html',
+      summary: 'React事件：事件委托，合成事件，事件池。',
+      date:'2020-08-11',
+      recommend: true,
+      creator: 'DuLinRain',
+      category: 'react'
+    }, 
+    {
       title:'React会保证按照setState的调用顺序来更新状态吗？',
       tags:['react'],
       link:'/react/React会保证按照setState的调用顺序来更新状态吗？.html',
