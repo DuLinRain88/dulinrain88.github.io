@@ -1011,13 +1011,22 @@ window.ESNEXT = [
       recommend: true,
       category: 'esnext'
     }, {
+      title:'ES新特性之import断言',
+      tags:['es2021'],
+      link:'/esnext/ES新特性之import断言.html',
+      summary: `新的import断言特性允许模块引入语句在模块标识符处包含额外的信息。一个最初始的用处是引入JSON时使它是一个json模块。`,
+      date:'2021-12-19',
+      creator: 'DuLinRain',
+      recommend: false,
+      category: 'esnext'
+    }, {
       title:'ES2021新特性之逻辑赋值操作符',
       tags:['es2021'],
       link:'/esnext/ES2021新特性之逻辑赋值操作符.html',
       summary: `ES2021提供了几种新的逻辑赋值操作符，简化我们的代码书写，分别是 ||=、&&= 、??=。`,
       date:'2021-02-19',
       creator: 'DuLinRain',
-      recommend: true,
+      recommend: false,
       category: 'esnext'
     }, {
       title:'ES2019之字符串trimStart和trimEnd',
