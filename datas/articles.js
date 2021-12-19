@@ -1011,6 +1011,15 @@ window.ESNEXT = [
       recommend: true,
       category: 'esnext'
     }, {
+      title:'ES2021新特性之逻辑赋值操作符',
+      tags:['es2021'],
+      link:'/esnext/ES2021新特性之逻辑赋值操作符.html',
+      summary: `ES2021提供了几种新的逻辑赋值操作符，简化我们的代码书写，分别是 ||=、&&= 、??=。`,
+      date:'2021-02-19',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'esnext'
+    }, {
       title:'ES2019之字符串trimStart和trimEnd',
       tags:['es2019'],
       link:'/esnext/ES2019之字符串trimStart和trimEnd.html',
