@@ -1011,6 +1011,15 @@ window.ESNEXT = [
       recommend: true,
       category: 'esnext'
     }, {
+      title:'ES新特性之findLast 和 findLastIndex',
+      tags:['es2021'],
+      link:'/esnext/ES新特性之findLast 和 findLastIndex.html',
+      summary: `findLast 和 findLastIndex用于从后往前获取数组元素。它们和他们的另一半find 和 findIndex 用法完全一样，除了从后往前查找。`,
+      date:'2021-12-19',
+      creator: 'DuLinRain',
+      recommend: false,
+      category: 'esnext'
+    }, {
       title:'ES新特性之import断言',
       tags:['es2021'],
       link:'/esnext/ES新特性之import断言.html',
