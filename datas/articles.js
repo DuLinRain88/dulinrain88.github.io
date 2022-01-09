@@ -442,6 +442,16 @@ window.CSS_ARTICLES = [
 
 window.MISCELLANEOUS_ARTICLES = [
   {
+      title:'webpack模块联邦——动态remote',
+      tags:['微前端', '模块联邦', 'webpack'],
+      link:'/webpack/webpack模块联邦——动态remote.MD',
+      summary: `在「Webpack5 Module Federation试用」中我们已经试用过模块联邦了，但是在之前的例子里，我们的remote依赖都是写死的，实际生产场景中，我们通常期待remote是动态控制的。所以本文将讲述模块联邦动态remote的几种方式`,
+      date:'2021-12-26',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'miscellaneous'
+  }, 
+  {
       title:'Webpack5 Module Federation试用',
       tags:['微前端', 'webpack'],
       link:'https://mp.weixin.qq.com/s/U1NHQgD8vbnByxLoT4rMeg',
