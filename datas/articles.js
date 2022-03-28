@@ -442,6 +442,16 @@ window.CSS_ARTICLES = [
 
 window.MISCELLANEOUS_ARTICLES = [
   {
+      title:'语义化版本(semver)与NPM解析',
+      tags:['semver', 'npm', '语义化版本'],
+      link:'/miscellaneous/语义化版本(semver)与NPM解析',
+      summary: `本文简单梳理了语义化版本(semver)与NPM安装包时的解析规则`,
+      date:'2022-03-26',
+      creator: 'DuLinRain',
+      recommend: false,
+      category: 'miscellaneous'
+  }, 
+  {
       title:'webpack模块联邦——动态remote',
       tags:['微前端', '模块联邦', 'webpack'],
       link:'/webpack/webpack模块联邦——动态remote',
