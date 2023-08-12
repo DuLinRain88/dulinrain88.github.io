@@ -167,6 +167,24 @@ window.BASIC_JAVASCRIPT_ARTICLES = [
 ]
 window.CHROME_ARTICLES = [
   {
+      title:'无限嵌套同样的iframe会怎样?',
+      tags:['chrome'],
+      link:'/chrome/无限嵌套同样的iframe会怎样？.md',
+      date:'2023-02-25',
+      creator: 'DuLinRain',
+      recommend: true,
+      category: 'chrome'
+  },                       
+  {
+      title:'多个浏览器已开始支持import maps',
+      tags:['chrome'],
+      link:'/chrome/多个浏览器已开始支持import maps.md',
+      date:'2023-06-12',
+      creator: 'DuLinRain翻译',
+      recommend: true,
+      category: 'chrome'
+  },
+  {
       title:'async vs defer',
       tags:['chrome'],
       link:'/chrome/async vs defer.html',
@@ -441,6 +459,15 @@ window.CSS_ARTICLES = [
 ]
 
 window.MISCELLANEOUS_ARTICLES = [
+  {
+      title:'HiveSQL with as 语法',
+      tags:['hive', 'sql', '大数据'],
+      link:'/bigdata/HiveSQL with as 语法.md',
+      date:'2023-03-26',
+      creator: 'DuLinRain',
+      recommend: false,
+      category: 'miscellaneous'
+  }, 
   {
       title:'语义化版本(semver)与NPM解析',
       tags:['semver', 'npm', '语义化版本'],
