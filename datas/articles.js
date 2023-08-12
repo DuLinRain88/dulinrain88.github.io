@@ -1654,6 +1654,26 @@ window.NODEJS_ARTICLES = [
 
 window.REACT_ARTICLES = [
     {
+      title:'useSignal()—web框架的未来',
+      tags:['reactivity'],
+      link:'/reactivity/useSignal()—web框架的未来.pdf',
+      summary: '原文来自Angularjs大佬MIŠKO HEVERY，这个概念实际上与这些年前端圈讨论的比较多的Reactivity和Fine-Grain Reactivity息息相关。简而言之，signal理念带来了2大好处：1. 细粒度的响应式（Fine-Grain Reactivity）2. 更好的开发体验（DX）',
+      date:'2023-08-12',
+      recommend: true,
+      creator: 'DuLinRain',
+      category: 'react'
+    }, 
+    {
+      title:'细粒度响应式实践介绍',
+      tags:['reactivity'],
+      link:'/reactivity/细粒度响应式实践介绍.pdf',
+      summary: '这篇文章涵盖了很多内容。我们介绍了核心原语，并触及了细粒度响应性的定义特征，包括依赖关系解析和同步执行。',
+      date:'2023-08-11',
+      recommend: true,
+      creator: 'DuLinRain',
+      category: 'react'
+    }, 
+    {
       title:'React事件',
       tags:['react'],
       link:'/react/React事件.html',
