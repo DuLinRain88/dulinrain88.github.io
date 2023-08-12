@@ -493,10 +493,64 @@ window.MISCELLANEOUS_ARTICLES = [
   {
       title:'TypeScript中是如何实现枚举的？',
       tags:['ts'],
-      link:'/es9/TypeScript中是如何实现枚举的？.html',
+      link:'/ts/TypeScript中是如何实现枚举的？.html',
       date:'2018-01-01',
       creator: 'DuLinRain',
       recommend: true,
+      category: 'miscellaneous'
+  }, 
+  {
+      title:'TS 公用类型',
+      tags:['ts'],
+      link:'/ts/TS 公用类型.md',
+      date:'2022-11-22',
+      creator: 'DuLinRain',
+      recommend: false,
+      category: 'miscellaneous'
+  }, 
+  {
+      title:'TS keyof类型操作符',
+      tags:['ts'],
+      link:'/ts/TS keyof类型操作符.md',
+      date:'2022-11-22',
+      creator: 'DuLinRain',
+      recommend: false,
+      category: 'miscellaneous'
+  }, 
+  {
+      title:'TS避免使用any的理由',
+      tags:['ts'],
+      link:'/ts/避免使用any的理由.md',
+      date:'2022-11-12',
+      creator: 'DuLinRain',
+      recommend: false,
+      category: 'miscellaneous'
+  }, 
+  {
+      title:'TS Array类型',
+      tags:['ts'],
+      link:'/ts/TS Array类型.md',
+      date:'2022-11-12',
+      creator: 'DuLinRain',
+      recommend: false,
+      category: 'miscellaneous'
+  }, 
+  {
+      title:'TS Object类型',
+      tags:['ts'],
+      link:'/ts/TS Object类型.md',
+      date:'2022-06-12',
+      creator: 'DuLinRain',
+      recommend: false,
+      category: 'miscellaneous'
+  }, 
+  {
+      title:'用type还是用interface定义对象类型?',
+      tags:['ts'],
+      link:'/ts/用type还是用interface定义对象类型?.md',
+      date:'2022-07-01',
+      creator: 'DuLinRain',
+      recommend: false,
       category: 'miscellaneous'
   }, 
   {
