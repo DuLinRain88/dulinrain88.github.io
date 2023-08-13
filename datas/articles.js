@@ -1769,7 +1769,7 @@ window.REACT_ARTICLES = [
       tags:['reactivity', 'signal'],
       link:'/reactivity/手撸一个响应式库.pdf',
       summary: '本文来源于Solid.js作者Ryan Carniato，讲解如何手撸一个响应式库。在之前的文章「细粒度响应式实践介绍」中，我通过示例讲述了细粒度响应式背后的理念。现在我们来聊聊如何自己创建一个响应式库。',
-      date:'2023-08-15',
+      date:'2023-08-12',
       recommend: true,
       creator: 'DuLinRain',
       category: 'react'
