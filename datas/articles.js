@@ -1735,6 +1735,36 @@ window.NODEJS_ARTICLES = [
 
 window.REACT_ARTICLES = [
     {
+      title:'构建自己的Resumability框架',
+      tags:['resumability', 'hydration', 'ssr', '水合'],
+      link:'/resumability/水化（hydration）是无谓的开销.pdf',
+      summary: '本文翻译自Angular、Qwik作者MIŠKO HEVERY，在之前论述Resumability vs Hydration基础之上进一步讲述了如何实现Resumability的细节。',
+      date:'2023-07-16',
+      recommend: true,
+      creator: 'DuLinRain',
+      category: 'react'
+    }, 
+    {
+      title:'水化（hydration）是无谓的开销',
+      tags:['resumability', 'hydration', 'ssr', '水合'],
+      link:'/resumability/水化（hydration）是无谓的开销.pdf',
+      summary: 'Hydration是一项开销，因为它做的是重复性工作。服务器构建 WHERE 和 WHAT（APP_STATE 和 FRAMEWORK_STATE），但信息会被丢弃，而不是为客户端进行序列化。然后，客户端收到的 HTML 没有足够的信息来重建应用程序。信息的缺乏迫使客户端急切地下载应用程序并执行它以恢复 WHERE 和 WHAT（APP_STATE 和 FRAMEWORK_STATE）。',
+      date:'2023-07-14',
+      recommend: true,
+      creator: 'DuLinRain',
+      category: 'react'
+    }, 
+    {
+      title:'Resumability vs Hydration',
+      tags:['resumability', 'hydration', 'ssr', '水合'],
+      link:'/resumability/Resumability vs Hydration.pdf',
+      summary: 'Resumability是比Hydration更快的替代方案。乍一看，Resumability和Hydration的作用似乎是相同的。毕竟，两者都可以为你的页面带来可交互性。但是如果将 Hydration 仅仅定义为「使页面具有交互性」太过于宽泛了，没有Hydration 页面仍然具有可交互性，比如CSR场景。',
+      date:'2023-07-22',
+      recommend: true,
+      creator: 'DuLinRain',
+      category: 'react'
+    }, 
+    {
       title:'Signal vs Observable 有啥区别？',
       tags:['reactivity', 'signal'],
       link:'/reactivity/Signal vs Observable 有啥区别？.pdf',
